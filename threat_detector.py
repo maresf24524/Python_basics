@@ -8,7 +8,6 @@ events = [
 
 threat_count = 0
 
-# sem napíš kód
 for event in events:
     if event["status"] == "failed" and event["ip"].startswith("185."):
         print("Threat detected!")
